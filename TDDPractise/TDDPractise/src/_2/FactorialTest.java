@@ -16,10 +16,9 @@ public class FactorialTest {
 		Assert.assertEquals(1, Factorial.calculate(1));
 		Assert.assertEquals(2, Factorial.calculate(2));
 	}
-	
+
 	@Test
-	public void furtherTest()
-	{
+	public void furtherTest() {
 		Assert.assertEquals(120, Factorial.calculate(5));
 	}
 }
