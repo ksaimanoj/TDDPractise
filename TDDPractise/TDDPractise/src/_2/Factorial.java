@@ -18,9 +18,8 @@ public class Factorial {
 	}
 
 	private static BigInteger calculateFactorial(int value) {
-		BigInteger result = new BigInteger("1");
-		for (int i = 1; i <= value; i++)
-			result = result.multiply(new BigInteger(i+""));
-		return result;
+		return (value == 0 || value == 1) ? new BigInteger("1")
+				: new BigInteger(value + "")
+						.multiply(calculateFactorial(value - 1));
 	}
 }
